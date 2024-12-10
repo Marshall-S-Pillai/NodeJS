@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build:
@@ -16,8 +13,6 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
-        with:
-          node-version: '16' # Specify the version of Node.js
 
       - name: Install, Build, and Test
         run: |
